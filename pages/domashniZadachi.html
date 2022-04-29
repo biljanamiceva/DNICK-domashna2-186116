@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <style>
+        .title {
+            color: #ff5c6d;
+            font-family: Bahnschrift;
+        }
+
+        .btn1 {
+            color: #4e4242;
+            background-color: #fff5f4;
+            width: 185px;
+            height: 52px;
+            border-radius: 15px;
+            margin-left: -91px;
+            margin-top: -80px;
+            text-decoration: none;
+        }
+
+        .gradient-custom-3 {
+            background: #ff5c6d;
+            background: -webkit-linear-gradient(to left, #FFE4E1, #FFFFFF);
+            background: linear-gradient(to left, #FFE4E1, #FFFFFF)
+        }
+
+        #sidebarMenu {
+
+            border-radius: 15px;
+            margin-left: 25px;
+            width: 260px;
+            height: 600px;
+            margin-top: 50px;
+        }
+
+        #sidebarMenu1 {
+
+            border-radius: 15px;
+            margin-left: 10px;
+            width: 260px;
+            height: 600px;
+            margin-top: 0px;
+            background-color: #fff5f4;
+        }
+
+        #sidebarMenu .nav-link {
+
+            color: black;
+            transition: all 100ms ease-in-out;
+        }
+
+        #sidebarMenu .nav-link:hover {
+            background-color: #ff5c6d;
+            color: white;
+            border-radius: 15px;
+        }
+
+        #sidebarMenu .nav-link.active {
+            background-color: #ff5c6d;
+            color: white;
+            border-radius: 15px;
+        }
+
+        input {
+            width: 909px;
+            height: 52px;
+            margin-left: -1044px;
+            margin-right: 40px;
+            margin-top: -498px;
+            background-color: #fff5f4;
+            border: none;
+            border-radius: 10px;
+        }
+        .container{
+            width: 819px;
+            height: 885px;
+            margin-top: 511px;
+            margin-left: 140px;
+        }
+        .container-fluid{
+            width: 1718px;
+            height: 634px;
+        }
+
+        .btn3 {
+            border-radius: 6px;
+            border: 1px solid #ff5c6d;
+            color: black;
+            background-color: white;
+
+        }
+        .search{
+            margin-left: 960px;
+            margin-top: -73px;
+        }
+
+        .card-body .btn:hover {
+            background-color: #ff5c6d;
+            color: white;
+            border-radius: 6px;
+        }
+
+        .card-body .btn.active {
+            background-color: #ff5c6d;
+            color: white;
+            border-radius: 6px;
+        }
+        .card{
+            border: 2px solid #FFE4E1;
+            border-radius: 8px;
+        }
+
+    </style>
+</head>
+<body>
+
+<header class="navbar navbar-white sticky-top bg-white flex-md-nowrap p-0 ">
+    <div class="container-fluid">
+        <div class="row ">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block collapse">
+                <div id="sidebarMenu1" class="shadow p-3 mb-5">
+
+                    <div class="position-sticky pt-3">
+                        <ul class="nav flex-column">
+                            <li>
+                                <div class="d-flex justify-content-start"><h6 class="text-center   ">Систем за учење<br>
+                                    <span class="title">Full-Stack програмирање</span></h6></div>
+                            </li>
+                            <hr/>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="pocetna.html">
+                                    <i class="bi bi-house-door"></i>
+                                    Почетна
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  " href="kursevi.html">
+                                    <i class="bi bi-file-earmark"></i>
+                                    Курсеви
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="forum.html">
+                                    <i class="bi bi-layout-text-sidebar-reverse"></i>
+                                    Форум
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="organizaciski%20del.html">
+                                    <i class="bi bi-journal"></i>
+                                    Организациски дел
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="testovi.html">
+                                    <i class="bi bi-question-circle"></i>
+                                    Тестови
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">
+                                    <i class="bi bi-folder"></i>
+                                    Домашни задачи
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="prakticniProekti.html">
+                                    <i class="bi bi-code-square"></i>
+                                    Практични проекти
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="postavki.html">
+                                    <i class="bi bi-gear"></i>
+                                    Поставки
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container">
+            <div class="search">
+                <input class="shadow" type="text" placeholder=" Search" aria-label="Search">
+                <a class="btn1 btn btn-md shadow text-center" href="../index.html"><i class="bi bi-door-open"></i> Одјави се</a>
+            </div>
+            <br>
+            <h3>Домашни задачи</h3>
+            <br>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+
+
+                <div class="col">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">HTML</h5>
+                            <hr/>
+                            <p class="card-text">Достапни се 5 домашни задачи</p>
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class="btn3 btn btn-sm" data-bs-toggle="modal" data-bs-target="#htmlModalHomework1">
+                                    Види Домашни
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">CSS</h5>
+                            <hr/>
+                            <p class="card-text text-center">Достапни се 6 домашни задачи</p>
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class="btn3 btn btn-sm" data-bs-toggle="modal" data-bs-target="#htmlModalHomework2">
+                                    Види Домашни
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Bootstrap</h5>
+                            <hr/>
+                            <p class="card-text text-center">Достапни се 8 домашни задачи</p>
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class="btn3 btn btn-sm" data-bs-toggle="modal" data-bs-target="#htmlModalHomework3">
+                                    Види Домашни
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">React</h5>
+                            <hr/>
+                            <p class="card-text text-center">Достапни се 4 домашни задачи</p>
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class="btn3 btn btn-sm" data-bs-toggle="modal" data-bs-target="#htmlModalHomework4">
+                                    Види Домашни
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Angular</h5>
+                            <hr/>
+                            <p class="card-text text-center">Достапни се 5 домашни задачи</p>
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class="btn3 btn btn-sm" data-bs-toggle="modal" data-bs-target="#htmlModalHomework5">
+                                    Види Домашни
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Vue</h5>
+                            <hr/>
+                            <p class="card-text text-center">Достапни се 6 домашни задачи</p>
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class="btn3 btn btn-sm" data-bs-toggle="modal" data-bs-target="#htmlModalHomework">
+                                    Види Домашни
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <div class="card">
+
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Bulma</h5>
+                            <hr/>
+                            <p class="card-text text-center">Достапни се 4 домашни задачи</p>
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class="btn3 btn btn-sm" data-bs-toggle="modal" data-bs-target="#htmlModalHomework">
+                                    Види Домашни
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Tailwind CSS</h5>
+                            <hr/>
+                            <p class="card-text text-center">Достапни се 5 домашни задачи</p>
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class="btn3 btn btn-sm" data-bs-toggle="modal" data-bs-target="#htmlModalHomework">
+                                    Види Домашни
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">JavaScript</h5>
+                            <hr/>
+                            <p class="card-text text-center">Достапни се 8 домашни задачи</p>
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class="btn3 btn btn-sm" data-bs-toggle="modal" data-bs-target="#htmlModalHomework">
+                                    Види Домашни
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">PHP</h5>
+                            <hr/>
+                            <p class="card-text text-center">Достапни се 6 домашни задачи</p>
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class="btn3 btn btn-sm" data-bs-toggle="modal" data-bs-target="#htmlModalHomework">
+                                    Види Домашни
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Ruby</h5>
+                            <hr/>
+                            <p class="card-text text-center">Достапни се 5 домашни задачи</p>
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class="btn3 btn btn-sm" data-bs-toggle="modal" data-bs-target="#htmlModalHomework">
+                                    Види Домашни
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Java</h5>
+                            <hr/>
+                            <p class="card-text text-center">Достапни се 9 домашни задачи</p>
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class="btn3 btn btn-sm" data-bs-toggle="modal" data-bs-target="#htmlModalHomework">
+                                    Види Домашни
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">ASP.NET</h5>
+                            <hr/>
+                            <p class="card-text text-center">Достапни се 5 домашни задачи</p>
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class="btn3 btn btn-sm" data-bs-toggle="modal" data-bs-target="#htmlModalHomework">
+                                    Види Домашни
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">SQL</h5>
+                            <hr/>
+                            <p class="card-text text-center">Достапни се 6 домашни задачи</p>
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class="btn3 btn btn-sm" data-bs-toggle="modal" data-bs-target="#htmlModalHomework">
+                                    Види Домашни
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">SQLite</h5>
+                            <hr/>
+                            < <p class="card-text text-center">Достапни се 5 домашни задачи</p>
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class="btn3 btn btn-sm" data-bs-toggle="modal" data-bs-target="#htmlModalHomework">
+                                    Види Домашни
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">MySQL</h5>
+                            <hr/>
+                            <p class="card-text text-center">Достапни се 4 домашни задачи</p>
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class="btn3 btn btn-sm" data-bs-toggle="modal" data-bs-target="#htmlModalHomework">
+                                    Види Домашни
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <footer class="bg-white text-center text-dark">
+                <div class="text-start p-3 bg-white">
+                    © 2022 Copyright: Систем за учење Full-Stack програмирање
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+</header>
+
+<!-- htmlModalHomeowrk1 -->
+<div class="modal fade"  id="htmlModalHomework1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-center" id="exampleModalLabel">Домашни задачи за HTML</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Домашна задача 1 <i class="bi bi-file-earmark-pdf"></i></li>
+                    <li class="list-group-item">Домашна задача 2 <i class="bi bi-file-earmark-pdf"></i></li>
+                    <li class="list-group-item">Домашна задача 3 <i class="bi bi-file-earmark-pdf"></i></li>
+                    <li class="list-group-item">Домашна задача 4 <i class="bi bi-file-earmark-pdf"></i></li>
+                    <li class="list-group-item">Домашна задача 5 <i class="bi bi-file-earmark-pdf"></i></li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn3 btn btn-md" data-bs-dismiss="modal">Назад</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- htmlModalHomeowrk2 -->
+<div class="modal fade"  id="htmlModalHomework2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-center" id="exampleModalLabel2">Домашни задачи за CSS</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Домашна задача 1 <i class="bi bi-file-earmark-pdf"></i></li>
+                    <li class="list-group-item">Домашна задача 2 <i class="bi bi-file-earmark-pdf"></i></li>
+                    <li class="list-group-item">Домашна задача 3 <i class="bi bi-file-earmark-pdf"></i></li>
+                    <li class="list-group-item">Домашна задача 4 <i class="bi bi-file-earmark-pdf"></i></li>
+                    <li class="list-group-item">Домашна задача 5 <i class="bi bi-file-earmark-pdf"></i></li>
+                    <li class="list-group-item">Домашна задача 6 <i class="bi bi-file-earmark-pdf"></i></li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn3 btn btn-md" data-bs-dismiss="modal">Назад</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- htmlModalHomeowrk3 -->
+<div class="modal fade"  id="htmlModalHomework3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-center" id="exampleModalLabel3">Домашни задачи за Bootstrap</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Домашна задача 1 <i class="bi bi-file-earmark-pdf"></i></li>
+                    <li class="list-group-item">Домашна задача 2 <i class="bi bi-file-earmark-pdf"></i></li>
+                    <li class="list-group-item">Домашна задача 3 <i class="bi bi-file-earmark-pdf"></i></li>
+                    <li class="list-group-item">Домашна задача 4 <i class="bi bi-file-earmark-pdf"></i></li>
+                    <li class="list-group-item">Домашна задача 5 <i class="bi bi-file-earmark-pdf"></i></li>
+                    <li class="list-group-item">Домашна задача 6 <i class="bi bi-file-earmark-pdf"></i></li>
+                    <li class="list-group-item">Домашна задача 7 <i class="bi bi-file-earmark-pdf"></i></li>
+                    <li class="list-group-item">Домашна задача 8 <i class="bi bi-file-earmark-pdf"></i></li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn3 btn btn-md" data-bs-dismiss="modal">Назад</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- htmlModalHomeowrk4 -->
+<div class="modal fade"  id="htmlModalHomework4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-center" id="exampleModalLabel4">Домашни задачи за React</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Домашна задача 1 <i class="bi bi-file-earmark-pdf"></i></li>
+                    <li class="list-group-item">Домашна задача 2 <i class="bi bi-file-earmark-pdf"></i></li>
+                    <li class="list-group-item">Домашна задача 3 <i class="bi bi-file-earmark-pdf"></i></li>
+                    <li class="list-group-item">Домашна задача 4 <i class="bi bi-file-earmark-pdf"></i></li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn3 btn btn-md" data-bs-dismiss="modal">Назад</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- htmlModalHomeowrk5 -->
+<div class="modal fade"  id="htmlModalHomework5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-center" id="exampleModalLabel5">Домашни задачи за Angular</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Домашна задача 1 <i class="bi bi-file-earmark-pdf"></i></li>
+                    <li class="list-group-item">Домашна задача 2 <i class="bi bi-file-earmark-pdf"></i></li>
+                    <li class="list-group-item">Домашна задача 3 <i class="bi bi-file-earmark-pdf"></i></li>
+                    <li class="list-group-item">Домашна задача 4 <i class="bi bi-file-earmark-pdf"></i></li>
+                    <li class="list-group-item">Домашна задача 5 <i class="bi bi-file-earmark-pdf"></i></li>
+
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn3 btn btn-md" data-bs-dismiss="modal">Назад</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- htmlModalHomeowrk -->
+<div class="modal fade"  id="htmlModalHomework" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-center" id="exampleModalLabel11">Домашни задачи</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Домашна задача 1 <i class="bi bi-file-earmark-pdf"></i></li>
+                    <li class="list-group-item">Домашна задача 2 <i class="bi bi-file-earmark-pdf"></i></li>
+                    <li class="list-group-item">Домашна задача 3 <i class="bi bi-file-earmark-pdf"></i></li>
+                    <li class="list-group-item">Домашна задача 4 <i class="bi bi-file-earmark-pdf"></i></li>
+                    <li class="list-group-item">Домашна задача 5 <i class="bi bi-file-earmark-pdf"></i></li>
+                    <li class="list-group-item">Домашна задача 6 <i class="bi bi-file-earmark-pdf"></i></li>
+
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn3 btn btn-md" data-bs-dismiss="modal">Назад</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

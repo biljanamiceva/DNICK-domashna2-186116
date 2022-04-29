@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kursevi</title>
+    <link rel="stylesheet" href="../bootstrap-5.1.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <style>
+        .title {
+            color: #ff5c6d;
+            font-family: Bahnschrift;
+        }
+
+        .btn1 {
+            color: #4e4242;
+            background-color: #fff5f4;
+            width: 185px;
+            height: 52px;
+            border-radius: 15px;
+          margin-left: -91px;
+            margin-top: -80px;
+            text-decoration: none;
+        }
+        #sidebarMenu {
+
+            border-radius: 15px;
+            margin-left: 25px;
+            width: 260px;
+            height: 600px;
+            margin-top: 50px;
+        }
+
+        #sidebarMenu1 {
+
+            border-radius: 15px;
+            margin-left: 10px;
+            width: 260px;
+            height: 600px;
+            margin-top: 0px;
+            background-color: #fff5f4;
+        }
+
+        #sidebarMenu .nav-link {
+
+            color: black;
+            transition: all 100ms ease-in-out;
+        }
+
+        #sidebarMenu .nav-link:hover {
+            background-color: #ff5c6d;
+            color: white;
+            border-radius: 15px;
+        }
+
+        #sidebarMenu .nav-link.active {
+            background-color: #ff5c6d;
+            color: white;
+            border-radius: 15px;
+        }
+
+        input {
+            width: 909px;
+            height: 52px;
+            margin-left: -1044px;
+            margin-right: 40px;
+            margin-top: -498px;
+            background-color: #fff5f4;
+            border: none;
+            border-radius: 10px;
+        }
+       .container{
+           width: 819px;
+           height: 885px;
+           margin-top: 511px;
+           margin-left: 140px;
+       }
+       .container-fluid{
+           width: 1718px;
+           height: 634px;
+       }
+        .btn2 {
+            color: #4e4242;
+            background-color: white;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-left: 15px;
+            border: 1px solid #ff5c6d;
+
+        }
+        .btn3 {
+            color: #4e4242;
+            background-color: white;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-left: 130px;
+            margin-top: -60px;
+            border: 1px solid #ff5c6d;
+
+        }
+        .btn4 {
+            border-radius: 6px;
+            border: 1px solid #ff5c6d;
+            color: white;
+            background-color: #ff5c6d;
+
+        }
+        .search{
+            margin-left: 960px;
+            margin-top: -73px;
+        }
+
+        .card-body .btn:hover {
+            background-color: #ff5c6d;
+            color: white;
+            border-radius: 6px;
+        }
+
+        .card-body .btn.active {
+            background-color: #ff5c6d;
+            color: white;
+            border-radius: 6px;
+        }
+        .card{
+            border: 2px solid #FFE4E1;
+            border-radius: 8px;
+        }
+        .modals{
+            width: 680px;
+            margin-left: -100px;
+        }
+    </style>
+
+</head>
+<body>
+
+<header class="navbar navbar-white sticky-top bg-white flex-md-nowrap p-0 ">
+    <div class="container-fluid">
+        <div class="row ">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block collapse">
+                <div id="sidebarMenu1" class="shadow p-3 mb-5">
+
+                    <div class="position-sticky pt-3">
+                        <ul class="nav flex-column">
+                            <li>
+                                <div class="d-flex justify-content-start"><h6 class="text-center   ">Систем за учење<br>
+                                    <span
+                                            class="title">Full-Stack програмирање</span></h6></div>
+                            </li>
+                            <hr/>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="pocetna.html">
+                                    <i class="bi bi-house-door"></i>
+                                    Почетна
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active " href="#">
+                                    <i class="bi bi-file-earmark"></i>
+                                    Курсеви
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="forum.html">
+                                    <i class="bi bi-layout-text-sidebar-reverse"></i>
+                                    Форум
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="organizaciski%20del.html">
+                                    <i class="bi bi-journal"></i>
+                                    Организациски дел
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="testovi.html">
+                                    <i class="bi bi-question-circle"></i>
+                                    Тестови
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="domashniZadachi.html">
+                                    <i class="bi bi-folder"></i>
+                                    Домашни задачи
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="prakticniProekti.html">
+                                    <i class="bi bi-code-square"></i>
+                                    Практични проекти
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="postavki.html">
+                                    <i class="bi bi-gear"></i>
+                                    Поставки
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container">
+            <div class="search">
+                <input class="shadow" type="text" placeholder=" Search" aria-label="Search">
+                <a class="btn1 btn btn-md shadow text-center" href="../index.html"><i class="bi bi-door-open"></i> Одјави се</a>
+            </div>
+            <br>
+            <br>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">HTML</h5>
+                            <hr/>
+                            <p class="card-text text-center">Јазик за градење Веб Страници</p>
+                            <a class="btn2 btn btn-sm" data-bs-toggle="modal" data-bs-target="#htmlModalHomework3" role="group" href="#">Научи HTML</a>
+                            <a class="btn3 btn btn-sm"  data-bs-toggle="modal" data-bs-target="#htmlModalHomework" role="group" href="#">Видеo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">CSS</h5>
+                            <hr/>
+                            <p class="card-text text-center">Јазик за стилизирање Веб страници.</p>
+                            <a class="btn2 btn btn-sm" data-bs-toggle="modal" data-bs-target="#htmlModalHomework4" role="group" href="#">Научи CSS</a>
+                            <a class="btn3 btn btn-sm" role="group"   data-bs-toggle="modal" data-bs-target="#htmlModalHomework1" href="#">Видеo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Bootstrap</h5>
+                            <hr/>
+                            <p class="card-text text-center"> CSS framework за дизајнирање Веб страници.</p>
+                            <a style="margin-left: 2px" class="btn2 btn btn-sm" data-bs-toggle="modal" data-bs-target="#htmlModalHomework5" role="group" href="#">Научи Bootstrap</a>
+                            <a class="btn3 btn btn-sm"   data-bs-toggle="modal" data-bs-target="#htmlModalHomework2" role="group" href="#">Видеo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">React</h5>
+                            <hr/>
+                            <p class="card-text text-center">React е JavaScript библиотека за градење кориснички интерфејси.</p>
+                            <a class="btn2 btn btn-sm" data-bs-toggle="modal" data-bs-target="#htmlModalHomework6" role="group" href="#">Научи React</a>
+                            <a class="btn3 btn btn-sm"    data-bs-toggle="modal" data-bs-target="#htmlModalHomework2" role="group" href="#">Видеo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Angular</h5>
+                            <hr/>
+                            <p class="card-text text-center">Angular е платформа за градење мобилни и десктоп веб-апликации.</p>
+                            <a class="btn2 btn btn-sm" data-bs-toggle="modal" data-bs-target="#htmlModalHomework6" role="group" href="#">Научи Angular</a>
+                            <a class="btn3 btn btn-sm"    data-bs-toggle="modal" data-bs-target="#htmlModalHomework2" role="group" href="#">Видеo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Vue</h5>
+                            <hr/>
+                            <p class="card-text text-center">Vue е прогресивен framework за градење кориснички интерфејси.</p>
+                            <a class="btn2 btn btn-sm" data-bs-toggle="modal" data-bs-target="#htmlModalHomework6" role="group" href="#">Научи Vue</a>
+                            <a class="btn3 btn btn-sm"    data-bs-toggle="modal" data-bs-target="#htmlModalHomework2" role="group" href="#">Видеo</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <div class="card">
+
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Bulma</h5>
+                            <hr/>
+                            <p class="card-text text-center">Bulma e CSS библиотека за дизајнирање Веб страници.</p>
+                            <a class="btn2 btn btn-sm" data-bs-toggle="modal" data-bs-target="#htmlModalHomework6" role="group" href="#">Научи Bulma</a>
+                            <a class="btn3 btn btn-sm"    data-bs-toggle="modal" data-bs-target="#htmlModalHomework2" role="group" href="#">Видеo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Tailwind CSS</h5>
+                            <hr/>
+                            <p class="card-text text-center">Tailwind CSS e CSS библиотека за дизајнирање Веб страници.</p>
+                            <a style="margin-left: 2px" class="btn2 btn btn-sm" data-bs-toggle="modal" data-bs-target="#htmlModalHomework6" role="group" href="#">Научи Tailwind</a>
+                            <a class="btn3 btn btn-sm"    data-bs-toggle="modal" data-bs-target="#htmlModalHomework2" role="group" href="#">Видеo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">JavaScript</h5>
+                            <hr/>
+                            <p class="card-text text-center">Јазик за програмирање Веб страници.</p>
+                            <a style="margin-left: 2px" class="btn2 btn btn-sm" data-bs-toggle="modal" data-bs-target="#htmlModalHomework6" role="group" href="#">Научи JavaScript</a>
+                            <a class="btn3 btn btn-sm"     data-bs-toggle="modal" data-bs-target="#htmlModalHomework2"role="group" href="#">Видеo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">PHP</h5>
+                            <hr/>
+                            <p class="card-text text-center">PHP е јазик за скриптирање од страна на серверот кој е вграден во HTML.</p>
+                            <a class="btn2 btn btn-sm" data-bs-toggle="modal" data-bs-target="#htmlModalHomework6" role="group" href="#">Научи PHP</a>
+                            <a class="btn3 btn btn-sm"    data-bs-toggle="modal" data-bs-target="#htmlModalHomework2" role="group" href="#">Видеo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Ruby</h5>
+                            <hr/>
+                            <p class="card-text text-center">Динамичен програмски јазик со фокус на едноставноста и продуктивноста. </p>
+                            <a class="btn2 btn btn-sm" data-bs-toggle="modal" data-bs-target="#htmlModalHomework6" role="group" href="#">Научи Ruby</a>
+                            <a class="btn3 btn btn-sm" data-bs-toggle="modal" data-bs-target="#htmlModalHomework2" role="group" href="#">Видеo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Java</h5>
+                            <hr/>
+                            <p class="card-text text-center">Јава се користи за развој на мобилни апликации, веб апликации, десктоп апликации, игри..</p>
+                            <a class="btn2 btn btn-sm" data-bs-toggle="modal" data-bs-target="#htmlModalHomework6" role="group" href="#">Научи Java</a>
+                            <a class="btn3 btn btn-sm" data-bs-toggle="modal" data-bs-target="#htmlModalHomework2" role="group" href="#">Видеo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">ASP.NET</h5>
+                            <hr/>
+                            <p class="card-text text-center">ASP.NET е framework за изградба на модерни веб-апликации и услуги кои работат на macOS, Linux, Windows и Docker.</p>
+                            <a class="btn2 btn btn-sm" data-bs-toggle="modal" data-bs-target="#htmlModalHomework6" role="group" href="#">Научи ASP.NET</a>
+                            <a class="btn3 btn btn-sm" data-bs-toggle="modal" data-bs-target="#htmlModalHomework2" role="group" href="#">Видеo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">SQL</h5>
+                            <hr/>
+                            <p class="card-text text-center">Јазик за пристап до бази на податоци.</p>
+                            <a class="btn2 btn btn-sm" data-bs-toggle="modal" data-bs-target="#htmlModalHomework6" role="group" href="#">Научи SQL</a>
+                            <a class="btn3 btn btn-sm" data-bs-toggle="modal" data-bs-target="#htmlModalHomework2" role="group" href="#">Видеo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">SQLite</h5>
+                            <hr/>
+                            <p class="card-text text-center">SQLite се користи за развој на вграден софтвер.</p>
+                            <a class="btn2 btn btn-sm" data-bs-toggle="modal" data-bs-target="#htmlModalHomework6" role="group" href="#">Научи SQLite</a>
+                            <a class="btn3 btn btn-sm" data-bs-toggle="modal" data-bs-target="#htmlModalHomework2" role="group" href="#">Видеo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">MySQL</h5>
+                            <hr/>
+                            <p class="card-text text-center">MySQL е широко користен систем за управување со релациона база на податоци</p>
+                            <a class="btn2 btn btn-sm" data-bs-toggle="modal" data-bs-target="#htmlModalHomework6" role="group" href="#">Научи MySQL</a>
+                            <a class="btn3 btn btn-sm" data-bs-toggle="modal" data-bs-target="#htmlModalHomework2" role="group" href="#">Видеo</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <footer class="bg-white text-center text-dark">
+                <div class="text-start p-3 bg-white">
+                    © 2022 Copyright: Систем за учење Full-Stack програмирање
+                </div>
+            </footer>
+
+        </div>
+    </div>
+</header>
+
+<div class="modal fade" id="htmlModalHomework" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modals">
+            <div class="modal-header" style="background-color: #FFE4E1">
+                <h5 class="modal-title text-center" id="exampleModalLabel11">Видео</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <iframe width="640" height="370" src="https://www.youtube.com/embed/pQN-pnXPaVg">
+                </iframe>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn4 btn btn-md" data-bs-dismiss="modal">Назад</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="modal fade" id="htmlModalHomework1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modals">
+            <div class="modal-header" style="background-color: #FFE4E1">
+                <h5 class="modal-title text-center" id="exampleModalLabel1">Видео</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <iframe width="640" height="370" src="https://www.youtube.com/embed/ieTHC78giGQ">
+                </iframe>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn4 btn btn-md" data-bs-dismiss="modal">Назад</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="modal fade" id="htmlModalHomework2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modals">
+            <div class="modal-header" style="background-color: #FFE4E1">
+                <h5 class="modal-title text-center" id="exampleModalLabel2">Видео</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <iframe width="640" height="370" src="https://www.youtube.com/embed/alC4o-91eeY">
+                </iframe>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn4 btn btn-md" data-bs-dismiss="modal">Назад</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<div class="modal fade" id="htmlModalHomework3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #FFE4E1">
+                <h5 class="modal-title text-center" id="exampleModalLabel113">HTML</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Во овој дел, ќе завршиме со покривање на целиот опсег на HTML, така што ќе ви
+                    биде сосема удобно да ги ставите вистинските елементи на вистинските места
+                    на веб-страницата.</p>
+
+                <a href="#" class="link-dark">
+                    <li>HTML Вовед</li>
+                </a>
+                <a href="#" class="link-dark">
+                    <li>HTML Форми</li>
+                </a>
+                <a href="#" class="link-dark">
+                    <li>HTML Табели</li>
+                </a>
+                <a href="#" class="link-dark">
+                    <li>HTML Медиа</li>
+                </a>
+                <a href="#" class="link-dark">
+                    <li>HTML APIs</li>
+                </a>
+                <a href="#" class="link-dark">
+                    <li>HTML Графика</li>
+                </a>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn4 btn btn-md" data-bs-dismiss="modal">Назад</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="modal fade" id="htmlModalHomework4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #FFE4E1">
+                <h5 class="modal-title text-center" id="exampleModalLabel114">CSS</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>CSS опишува како треба да се прикажат HTML елементите.</p>
+                <a href="#" class="link-dark">
+                    <li>CSS Вовед</li>
+                </a>
+                <a href="#" class="link-dark">
+                    <li>CSS Box Model</li>
+                </a>
+                <a href="#" class="link-dark">
+                    <li>CSS Слики и позадина</li>
+                </a>
+                <a href="#" class="link-dark">
+                    <li>CSS Приказ и позиција</li>
+                </a>
+                <a href="#" class="link-dark">
+                    <li>CSS Бои, фонтови</li>
+                </a>
+                <a href="#" class="link-dark">
+                    <li>CSS Листи и Табели</li>
+                </a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn4 btn btn-md" data-bs-dismiss="modal">Назад</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<div class="modal fade" id="htmlModalHomework5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #FFE4E1">
+                <h5 class="modal-title text-center" id="exampleModalLabel115">Bootstrap</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p></p>
+                <a href="#" class="link-dark">
+                    <li>Bootstrap Вовед</li>
+                </a>
+                <a href="#" class="link-dark">
+                    <li>Bootstrap Содржина</li>
+                </a>
+                <a href="#" class="link-dark">
+                    <li>Bootstrap Форми</li>
+                </a>
+                <a href="#" class="link-dark">
+                    <li>Bootstrap Компоненти</li>
+                </a>
+                <a href="#" class="link-dark">
+                    <li>Bootstrap Икони</li>
+                </a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn4 btn btn-md" data-bs-dismiss="modal">Назад</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="modal fade" id="htmlModalHomework6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #FFE4E1">
+                <h5 class="modal-title text-center" id="exampleModalLabel116"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <a href="#" class="link-dark">
+                    <li>Дел 1</li>
+                </a>
+                <a href="#" class="link-dark">
+                    <li>Дел 2</li>
+                </a>
+                <a href="#" class="link-dark">
+                    <li>Дел 3</li>
+                </a>
+                <a href="#" class="link-dark">
+                    <li>Дел 4</li>
+                </a>
+                <a href="#" class="link-dark">
+                    <li>Дел 5</li>
+                </a>
+                <a href="#" class="link-dark">
+                    <li>Дел 6</li>
+                </a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn4 btn btn-md" data-bs-dismiss="modal">Назад</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script src="../bootstrap-5.1.3-dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
